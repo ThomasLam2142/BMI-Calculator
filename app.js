@@ -2,7 +2,8 @@
 let bmiElement = document.getElementById("bmiElement");
 const calculateBtn = document.querySelector(".calculateButton");
 const systemButton = document.querySelector(".systemButton");
-let numberSystem = "metric"
+const systemElement = document.querySelector(".systemElement");
+let numberSystem = "Metric";
 
 
 calculateBtn.addEventListener("click", ()=>{
@@ -14,7 +15,7 @@ calculateBtn.addEventListener("click", ()=>{
     console.log(weightnum);
     console.log(heightnum);
 
-    if (numberSystem == "metric"){
+    if (numberSystem == "Metric"){
         bmiTotal = weightnum /(heightnum^2);
     }else{
         bmiTotal = (weightnum/heightnum^2)*703;
@@ -28,15 +29,15 @@ calculateBtn.addEventListener("click", ()=>{
 
 systemButton.addEventListener("click", ()=>{
     
-    if(numberSystem == "metric"){
-        numberSystem = "imperial";
+    if(numberSystem == "Metric"){
+        numberSystem = "Imperial";
         console.log("Switched to Metric");
     }else{
-        numberSystem = "metric";
+        numberSystem = "Metric";
         console.log("Switched to Imperial");
     }
     
-
+    systemElement.textContent = numberSystem;
 
 
     

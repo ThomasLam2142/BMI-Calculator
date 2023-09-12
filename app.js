@@ -1,17 +1,27 @@
 
 let bmiElement = document.getElementById("bmiElement");
-
 const calculateBtn = document.querySelector(".calculateButton");
+let numberSystem = "metric"
 
 
 calculateBtn.addEventListener("click", ()=>{
     
     let weightnum = document.getElementById("inputWeight").value;
     let heightnum = document.getElementById("inputHeight").value;
+    let bmiTotal = 0;
 
     console.log(weightnum);
     console.log(heightnum);
-    let bmiTotal = weightnum /(heightnum^2);
+
+    if (numberSystem == "metric"){
+        bmiTotal = weightnum /(heightnum^2);
+    }else{
+        bmiTotal = (weightnum/heightnum^2)*703;
+    }
+    
+
+
+
     console.log(bmiTotal);
     bmiElement.textContent =  bmiTotal;
 

@@ -35,7 +35,18 @@ button{
     margin-top: 15px;
 }
 
-.mainHeader{
-    padding: 6px;
-    color: rgb(238, 224, 176);
+.mainHeader {
+    padding: 11px;
+    color: rgb(255, 0, 204);
+    background-color: rgba(0, 254, 186, 0.7);
+    border: 2px solid rgb(255, 0, 204);
+    text-align: center; /* Center the text horizontally */
+    display: flex;
+    justify-content: center; /* Center the text vertically */
+    align-items: center;
+    margin-top: -10px; /* Move the element up by 10 pixels */
+}
+
+.bmiContainer{
+    padding-top: 1em;
 }

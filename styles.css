@@ -6,20 +6,23 @@
 }
 
 body {
-    background:#222;
+    background: #222;
     color: white; /* Set text color to white for visibility on a black background */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
 }
 
 .card {
-    width:90%;
-    max-width:470px;
-    background: linear-gradient(135deg,#00feba,#5b548a);
-    color:#fff;
-    margin:100px auto 0;
-    border-radius:20px;
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
-    justify-content: space-between;
 }
 
 .inputContainer{

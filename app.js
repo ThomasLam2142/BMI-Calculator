@@ -3,6 +3,9 @@ let bmiElement = document.getElementById("bmiElement");
 const calculateBtn = document.querySelector(".calculateButton");
 const systemButton = document.querySelector(".systemButton");
 const systemElement = document.querySelector(".systemElement");
+
+const weightType = document.getElementById("weightType");
+const heightType = document.getElementById("heightType");
 let numberSystem = "Metric";
 
 
@@ -16,8 +19,12 @@ calculateBtn.addEventListener("click", ()=>{
     console.log(heightnum);
 
     if (numberSystem == "Metric"){
+        //Weight in Kg
+        //Height in cm
         bmiTotal = weightnum /(heightnum^2);
     }else{
+        //Weight in Pounds
+        //Height in feet
         bmiTotal = (weightnum/heightnum^2)*703;
     }
     
@@ -31,15 +38,17 @@ systemButton.addEventListener("click", ()=>{
     
     if(numberSystem == "Metric"){
         numberSystem = "Imperial";
-        console.log("Switched to Metric");
+        console.log("Switched to Imperial");
+        heightType.textContent = "inches";
+        weightType.textContent = "pounds";
     }else{
         numberSystem = "Metric";
-        console.log("Switched to Imperial");
+        console.log("Switched to Metric");
+        heightType.textContent = "centimeters";
+        weightType.textContent = "kilograms";
     }
     
     systemElement.textContent = numberSystem;
 
-
-    
 
 })

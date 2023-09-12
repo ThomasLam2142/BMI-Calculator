@@ -1,6 +1,7 @@
 
 let bmiElement = document.getElementById("bmiElement");
 const calculateBtn = document.querySelector(".calculateButton");
+const systemButton = document.querySelector(".systemButton");
 let numberSystem = "metric"
 
 
@@ -20,9 +21,13 @@ calculateBtn.addEventListener("click", ()=>{
     }
     
 
-
-
     console.log(bmiTotal);
     bmiElement.textContent =  bmiTotal;
+
+})
+
+systemButton.addEventListener("click", ()=>{
+    console.log("asopdidfainf");
+
 
 })

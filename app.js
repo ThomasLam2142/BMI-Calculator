@@ -1,16 +1,14 @@
-let weight = document.querySelector(".inputWeight");
-let height = document.querySelector(".inputHeight");
+
 let bmiElement = document.querySelector(".bmiElement").value;
 
 const calculateBtn = document.querySelector(".calculateButton");
 
 
 calculateBtn.addEventListener("click", ()=>{
+    //let bmiTotal = weight /(height^2);
+    let weightnum = document.getElementById("inputWeight").value;
+    let height = document.getElementById("inputHeight").value;
 
- 
-    console.log("123123123");
+    console.log(weightnum);
 
-    //bmiElement.textContent = 100;
-
-    
 })

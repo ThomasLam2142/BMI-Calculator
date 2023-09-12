@@ -27,7 +27,18 @@ calculateBtn.addEventListener("click", ()=>{
 })
 
 systemButton.addEventListener("click", ()=>{
-    console.log("asopdidfainf");
+    
+    if(numberSystem == "metric"){
+        numberSystem = "imperial";
+        console.log("Switched to Metric");
+    }else{
+        numberSystem = "metric";
+        console.log("Switched to Imperial");
+    }
+    
 
+
+
+    
 
 })
